@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Illustration of the Digging Dreams play space with a Digging Dreams sign on the back wall">
+<rect width="1200" height="800" fill="#fff6e0"/>
+<rect width="1200" height="470" fill="#fde9b8"/>
+<rect y="400" width="1200" height="70" fill="#f9d98c"/>
+<g fill="#fff"><circle cx="90" cy="70" r="5"/><circle cx="1110" cy="60" r="6"/><circle cx="200" cy="200" r="4"/><circle cx="1020" cy="220" r="5"/><circle cx="130" cy="330" r="6"/><circle cx="1080" cy="350" r="4"/></g>
+<rect x="320" y="80" width="560" height="170" rx="26" fill="#1f2a44"/>
+<rect x="334" y="94" width="532" height="142" rx="18" fill="none" stroke="#f28c1b" stroke-width="4" stroke-dasharray="14 8"/>
+<circle cx="392" cy="140" r="26" fill="#f28c1b"/><circle cx="404" cy="132" r="24" fill="#1f2a44"/>
+<text x="620" y="165" text-anchor="middle" font-family="Trebuchet MS,Arial Black,Arial,sans-serif" font-weight="900" font-size="66" fill="#fff">Digging Dreams</text>
+<text x="620" y="208" text-anchor="middle" font-family="Trebuchet MS,Arial,sans-serif" font-weight="700" font-size="22" letter-spacing="4" fill="#f28c1b">DIG • BUILD • IMAGINE • DREAM</text>
+<rect y="455" width="1200" height="34" fill="#8a5a2b"/>
+<rect y="489" width="1200" height="311" fill="#f2d28b"/>
+<ellipse cx="640" cy="640" rx="170" ry="26" fill="#e8c274"/><ellipse cx="1060" cy="560" rx="120" ry="18" fill="#e8c274"/><ellipse cx="120" cy="770" rx="150" ry="20" fill="#e8c274"/>
+<!-- excavator -->
+<polyline points="260,650 190,550 110,520" stroke="#f5b800" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<polyline points="110,520 80,630" stroke="#f5b800" stroke-width="14" stroke-linecap="round" fill="none"/>
+<polygon points="45,625 100,645 85,690 35,672" fill="#444"/>
+<rect x="200" y="700" width="250" height="52" rx="26" fill="#333"/><circle cx="228" cy="726" r="14" fill="#777"/><circle cx="422" cy="726" r="14" fill="#777"/>
+<rect x="215" y="640" width="210" height="62" rx="8" fill="#f5b800"/>
+<rect x="320" y="566" width="105" height="74" rx="8" fill="#f5b800"/><rect x="336" y="580" width="62" height="42" rx="4" fill="#bde3ff"/>
+<!-- dump truck -->
+<polygon points="780,640 960,640 985,705 780,705" fill="#f5b800"/>
+<rect x="965" y="635" width="105" height="70" rx="8" fill="#f5b800"/><rect x="1010" y="647" width="50" height="32" rx="4" fill="#bde3ff"/>
+<rect x="770" y="705" width="310" height="20" fill="#333"/>
+<circle cx="840" cy="728" r="30" fill="#222"/><circle cx="840" cy="728" r="12" fill="#888"/><circle cx="1010" cy="728" r="30" fill="#222"/><circle cx="1010" cy="728" r="12" fill="#888"/>
+<!-- cones -->
+<g><rect x="548" y="738" width="54" height="9" fill="#c96d06"/><polygon points="560,738 590,738 575,670" fill="#f28c1b"/><polygon points="568.4,700 581.6,700 584.3,712 565.7,712" fill="#fff"/></g>
+<g><rect x="688" y="718" width="44" height="8" fill="#c96d06"/><polygon points="698,718 722,718 710,664" fill="#f28c1b"/><polygon points="703.5,690 716.5,690 718.5,699 701.5,699" fill="#fff"/></g>
+<!-- hard hat + bucket -->
+<path d="M520 600a50 40 0 0 1 100 0z" fill="#f5b800"/><rect x="508" y="598" width="124" height="12" rx="6" fill="#d99a00"/>
+<polygon points="860,590 930,590 918,640 872,640" fill="#e8453c"/><rect x="852" y="582" width="86" height="10" rx="5" fill="#c4362f"/>
+</svg>
