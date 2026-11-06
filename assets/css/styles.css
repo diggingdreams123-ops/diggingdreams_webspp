@@ -6,7 +6,7 @@
   --orange-d: #c96d06;
   --ink: #2b2b2b;
   --r: 18px;
-  --max: 1400px
+  --max: 1440px;
 }
 * {
   box-sizing: border-box;
@@ -17,8 +17,13 @@ html {
 }
 body {
   margin: 0;
-  font: 17px/1.6 ui-rounded, "Trebuchet MS", system-ui, -apple-system,
-    "Segoe UI", sans-serif;
+  font:
+    17px/1.6 ui-rounded,
+    "Trebuchet MS",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    sans-serif;
   color: var(--ink);
   background: var(--sand);
 }
@@ -49,7 +54,7 @@ a {
 .wrap {
   max-width: var(--max);
   margin: 0 auto;
-  padding: 0 clamp(20px, 4vw, 56px)
+  padding: 0 clamp(20px, 4vw, 64px);
 }
 section {
   padding: 64px 0;
@@ -170,7 +175,8 @@ nav .btn {
   min-height: 70vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(rgba(31, 42, 68, 0.62), rgba(31, 42, 68, 0.72)),
+  background:
+    linear-gradient(rgba(31, 42, 68, 0.62), rgba(31, 42, 68, 0.72)),
     url(../images/hero.jpg) center/cover;
 }
 .hero h1 {
@@ -373,6 +379,8 @@ footer strong {
     align-items: center;
     gap: 26px;
     padding: 0;
+    background: transparent;
+    box-shadow: none;
   }
   nav a {
     padding: 0;
@@ -425,16 +433,117 @@ nav a:not(.btn):hover {
 nav a {
   white-space: nowrap;
 }
-
-/* Fix: make the navigation blend into the header */
-header nav {
-  background: transparent;
-  box-shadow: none;
-  border-radius: 0;
+@media (min-width: 1500px) {
+  body {
+    font-size: 18px;
+  }
+  .hero p.sub {
+    max-width: 760px;
+  }
 }
 
-/* Keep the header layout clean and aligned */
-header .bar {
-  background: transparent;
-  box-shadow: none;
+/* pricing (from flyer) */
+.rates {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 900px;
+  margin: 28px auto;
+}
+.rate {
+  background: var(--night);
+  color: #fff;
+  border-radius: var(--r);
+  padding: 26px 18px;
+  border-bottom: 6px solid #f5b800;
+}
+.rate span {
+  display: block;
+  color: #f5b800;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.rate strong {
+  display: block;
+  font-size: 2.6rem;
+  line-height: 1.15;
+  color: #f5b800;
+}
+.rate em {
+  font-style: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.rate.deal {
+  background: #1560ad;
+}
+.rate.deal strong {
+  color: #fff;
+}
+@media (min-width: 700px) {
+  .rates {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+/* mobile / in-app browser hardening */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+header {
+  position: -webkit-sticky;
+  position: sticky;
+}
+.wrap {
+  padding: 0 20px;
+  padding: 0 clamp(20px, 4vw, 64px);
+}
+.hero {
+  min-height: 60vh;
+}
+.hero .wrap {
+  width: 100%;
+}
+.grid,
+.split {
+  grid-template-columns: minmax(0, 1fr);
+}
+.card,
+.split > * {
+  min-width: 0;
+}
+h1,
+h2,
+h3,
+p,
+li {
+  overflow-wrap: break-word;
+}
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin: -6px;
+}
+.btns > * {
+  margin: 6px;
+}
+@media (min-width: 640px) {
+  .grid.c2,
+  .grid.c3,
+  .grid.c4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 900px) {
+  .grid.c3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .grid.c4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .split {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
